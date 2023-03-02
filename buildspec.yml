@@ -10,7 +10,7 @@ phases:
  build:
   commands:
     - echo building the docker image..
-    - docker build -t rasoolecr .
+    - docker build -t rasoolecr project/.
     - docker tag rasoolecr:latest 695586167899.dkr.ecr.us-east-2.amazonaws.com/rasoolecr:latest
  post_build:
   commands:
