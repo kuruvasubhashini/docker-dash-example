@@ -16,7 +16,7 @@ phases:
   commands:
     - echo pushing the docker image....
     - docker push 695586167899.dkr.ecr.us-east-2.amazonaws.com/rasoolecr:latest
-    - printf '[{"name":"streamlitdocker","imageUri":"695586167899.dkr.ecr.us-east-2.amazonaws.com/rasoolecr:latest"}]' > imagedefinitions.json
+    - printf '[{"name":"dockercontainer","imageUri":"695586167899.dkr.ecr.us-east-2.amazonaws.com/rasoolecr:latest"}]' > imagedefinitions.json
     - cat imagedefinitions.json
 artifacts:
  files:
